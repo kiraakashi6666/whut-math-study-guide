@@ -1,0 +1,53 @@
+[project]
+site_name = "WHUT 数学er 学习指南"
+site_url = "https://kiraakashi6666.github.io/whut-math-study-guide/"
+site_description = "面向武汉理工大学数学与统计学院学生的学习、保研与校园生活指南"
+site_dir = "site"
+exclude_docs = """
+superpowers/
+"""
+copyright = "© 2026 共同作者 · CC BY-NC-SA 4.0"
+nav = [
+  { "首页" = "index.md" },
+  { "引言" = "introduction.md" },
+  { "绩点" = [
+    { "日常学习" = "gpa/daily-study.md" },
+    { "课外学习" = "gpa/extracurricular-study.md" },
+    { "期末备考" = "gpa/final-exam-preparation.md" },
+  ] },
+  { "保研" = [
+    { "保研须知" = "postgraduate/must-known.md" },
+    { "简历和PPT" = "postgraduate/recommendation/resume.md" },
+    { "套磁" = "postgraduate/recommendation/email.md" },
+    { "笔面经验" = [
+      { "笔试准备" = "postgraduate/exams-and-interviews/written-exam.md" },
+      { "面试准备" = "postgraduate/exams-and-interviews/interview.md" },
+      { "实战案例" = "postgraduate/exams-and-interviews/cases.md" },
+    ] },
+    { "其他" = "postgraduate/other.md" },
+  ] },
+  { "WHUT校园生活指南" = [
+    { "重要地点" = [
+      { "校内地点" = "campus-life/locations/on-campus.md" },
+      { "校外地点" = "campus-life/locations/off-campus.md" },
+    ] },
+    { "社交" = [
+      { "社团" = "campus-life/social/clubs.md" },
+      { "活动" = "campus-life/social/activities.md" },
+    ] },
+    { "师生关系" = "campus-life/teacher-student-relations.md" },
+    { "WHUT的网站" = "campus-life/websites.md" },
+    { "入党" = "campus-life/party-membership.md" },
+  ] },
+]
+
+[project.theme]
+variant = "classic"
+language = "zh"
+features = [
+  "navigation.sections",
+  "navigation.tracking",
+  "navigation.top",
+  "search.highlight",
+  "toc.follow",
+]
